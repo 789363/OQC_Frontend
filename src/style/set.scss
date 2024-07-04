@@ -1,0 +1,152 @@
+.left-side {
+    height: 90vh;
+    width: 15%;
+    border: 0.5px solid #B6CADD;
+    background-color: #fff;
+}
+
+.list-group-item-action.active {
+    background-color: #B6CADD; 
+    color: #3668A4;
+    border-color: #B6CADD; 
+    border: 0px;
+  }
+
+.list1-group-item-action.active {
+  background-color: #B6CADD; 
+  color: #3668A4;
+  border-color: #B6CADD; 
+  border: 0px;
+}
+
+.model-checklist-div {
+    overflow-y: auto;
+    height: 80vh;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    background-color: #fff;
+}
+
+.model-checklist-body-each-div {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.model-checklist-body-each-text-div {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.modal-show-d-block {
+    position: fixed;
+  top: 0;
+  left: 0;
+//   z-index: 2000;
+//   display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+//   outline: 0;
+}
+
+.modal-dialog{
+    width: auto;
+    // pointer-events: none;
+}
+
+.modal-content{
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #F0F2F5;
+    // background-clip: padding-box;
+    border: 1px solid #B6CADD;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.modal-header {
+    background-color: #B6CADD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+
+    // &:last-child {
+    //     border-bottom: none;
+    // }
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+
+    // &:last-child {
+    //     border-bottom: none;
+    // }
+}
+
+// Accordion custom styles
+.accordion-button {
+    width: 100%; // 寬度填滿容器
+    background-color: #fff; // 白色背景
+    color: #000; // 黑色文字
+    font-weight: bold; // 文字使用粗體
+    border: 1px solid #ccc; // 定義邊框
+    border-radius: 0.25rem; // 輕微的圓角
+    padding: 0.5rem 1rem; // 內邊距
+  
+    &:not(.collapsed) {
+      background-color: #f8f9fa; // 當手風琴展開時的背景顏色
+      color: #333; // 展開時的文字顏色
+    }
+  }
+
+  
+  
+  .accordion-body {
+    background-color: #f8f9fa; // 內容背景色
+    color: #212529; // 文字顏色
+    padding: 15px; // 內容的內邊距
+  }
+  
+  .accordion-item {
+    border: 2px solid #dee2e6; // 邊框顏色和大小
+  
+    & + & {
+      border-top: none; // 移除相鄰手風琴項目之間的上邊框
+    }
+  }
+  
+  .accordion-button::after {
+    content: "+"; // 預設顯示 '+'
+    float: right; // 定位到右側
+    color: #333; // 符號的顏色
+  
+    .accordion-button:not(.collapsed)::after {
+      content: "-"; // 當展開時顯示 '-'
+    }
+  }
+  // Other styles related to your 'Set' component, if any
